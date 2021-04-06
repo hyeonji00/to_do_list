@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="shortcut icon" href="img/cherry.png">
+</head>
+<body>
+    <div id="BOX">
+		<h1>
+            <img src="img/head_1.png" alt="" class="head_img"></img>
+            TO DO LIST
+            <img src="img/head_2.png" alt="" class="head_img"></img>
+            <!--이미지랑 텍스트 한 줄에 하기-->
+        </h1>
+        <form id="input_form">
+            <input type="text" id="txt" class="txt" placeholder="  오늘의 할 일은?" required></input>
+            <button id="btn" class="btn" onclick="newRegister();return false">🍒</button>
+            <!--텍스트 창 크기 자동-->
+            <!--텍스트 입력 위치-->
+        </form>
+
+        <div id="List"></div>
+        <div>
+            <button id="btn_d1" class="btn" onclick="removeSelect();">선택 삭제</button>
+            <button id="btn_d2" class="btn" onclick="removeAll();">전체 삭제</button>
+        </div>
+	</div>
+
+    <script src="todolist.js"></script>
+</body>
+</html>
