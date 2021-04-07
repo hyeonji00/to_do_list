@@ -1,12 +1,12 @@
+
 #BOX {
-    width:500px; 
     background-color: aliceblue;
     text-align:center;
     border-radius: 30px;
-    min-height:550px;
-    margin:0 auto;
+    margin: auto;
     font-size: 13px;
     font-weight: 600;
+    max-width: 600px;
 }
 .head_img {
     height:50px;
@@ -34,7 +34,6 @@ h1 {
     font-weight: 700;
     border-radius: 6px;
     border: 0px;
-    text-align:center;
 }
 
 #List {
@@ -78,3 +77,10 @@ p{
     background-color: yellow;
 }
 /* 체크박스 디자인 */
+
+@media(hover:none){
+    #BOX{
+        width:80%;
+        min-height:80%;
+    }
+}
